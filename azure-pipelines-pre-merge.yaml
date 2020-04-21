@@ -1,0 +1,11 @@
+trigger:
+  - none
+
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: Engineering/engineering.buildtemplates
+
+jobs:
+  - template: Python/snyk-python.yaml@templates
